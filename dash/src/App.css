@@ -5,6 +5,8 @@ body, html {
   font-family: 'Arial', sans-serif;
   background-color: #e0f2f1; /* Fondo verde claro */
   height: 100%;
+  flex-direction: column;
+  justify-content: start;
 }
 
 /* Para pantallas grandes (centrado vertical y horizontal) */
@@ -38,16 +40,17 @@ body, html {
 
 /* Logo de la parte superior */
 .logo img {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 5px;
 }
 
 /* Título del formulario */
-h2 {
-  font-size: 24px;
-  color: #00695c; /* Verde turquesa oscuro */
+h3 {
+  font-size: 30px;
+  color: #408C8A; /* Verde turquesa oscuro */
   margin-bottom: 20px;
+  margin-top: 5px;
   font-weight: bold;
 }
 
@@ -67,31 +70,35 @@ label {
 input {
   padding: 14px;
   margin-bottom: 15px;
-  border: 1px solid #00796b; /* Verde turquesa oscuro para bordes */
+  border: 3px solid #00796b; /* Verde turquesa oscuro para bordes */
   border-radius: 6px;
   font-size: 16px;
   background-color: #e0f7fa; /* Verde claro */
   transition: border 0.3s;
+  color: #0b1a19;
 }
 
 input:focus {
-  border: 1px solid #004d40;
+  border: 3px solid #004d40;
   outline: none;
 }
 
 button {
-  padding: 14px;
-  background-color: #00796b; /* Verde turquesa oscuro */
-  color: white;
-  border: none;
+  padding: 10px;
+  background-color: #0b1a19; /* Verde turquesa oscuro */
+  border: 3px solid #00796b;
   border-radius: 6px;
   cursor: pointer;
   font-size: 18px;
   transition: background-color 0.3s;
+  color: #00796b;
 }
 
 button:hover {
-  background-color: #004d40;
+  background-color: #00796b;
+  color: #000000;
+  border: 3px solid #0b1a19;
+
 }
 
 p {
@@ -114,5 +121,9 @@ p {
 
 .enlaces-pie a:hover {
   color: #004d40; /* Cambio a un amarillo más oscuro al pasar el mouse */
+}
+
+.bienvenido  {
+  color: #000000;
 }
 
