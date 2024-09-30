@@ -5,7 +5,7 @@ function RegistroForm() {
       <div className="registro-caja">
         <div className="logo">
           <img
-            src="https://s.w.org/style/images/about/WordPress-logotype-alternate.png" // Puedes cambiar esta URL por tu propio logo
+            src="./public/img/logo.svg" // Puedes cambiar esta URL por tu propio logo
             alt="Logo"
           />
         </div>
