@@ -1,0 +1,129 @@
+/* Estilos globales */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f2f1; /* Fondo verde claro */
+  height: 100%;
+  flex-direction: column;
+  justify-content: start;
+}
+
+/* Para pantallas grandes (centrado vertical y horizontal) */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .registro-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+/* Caja del formulario */
+.registro-caja {
+  background-color: white;  /* Fondo blanco para el formulario */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+/* Logo de la parte superior */
+.logo img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 5px;
+}
+
+/* Título del formulario */
+h3 {
+  font-size: 30px;
+  color: #408C8A; /* Verde turquesa oscuro */
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Formulario */
+.registro-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: left;
+  color: #004d40; /* Verde más oscuro para los textos */
+}
+
+input {
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 3px solid #00796b; /* Verde turquesa oscuro para bordes */
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #e0f7fa; /* Verde claro */
+  transition: border 0.3s;
+  color: #0b1a19;
+}
+
+input:focus {
+  border: 3px solid #004d40;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #0b1a19; /* Verde turquesa oscuro */
+  border: 3px solid #00796b;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  color: #00796b;
+}
+
+button:hover {
+  background-color: #00796b;
+  color: #000000;
+  border: 3px solid #0b1a19;
+
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Enlaces en la parte inferior */
+.enlaces-pie {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.enlaces-pie a {
+  color: #004d40; /* Amarillo/mostaza para enlaces */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.enlaces-pie a:hover {
+  color: #004d40; /* Cambio a un amarillo más oscuro al pasar el mouse */
+}
+
+.bienvenido  {
+  color: #000000;
+}
+
