@@ -42,7 +42,6 @@ body, html {
 .logo img {
   width: 150px;
   height: 150px;
-  margin-bottom: 5px;
 }
 
 /* Título del formulario */
@@ -50,7 +49,7 @@ h3 {
   font-size: 30px;
   color: #408C8A; /* Verde turquesa oscuro */
   margin-bottom: 20px;
-  margin-top: 5px;
+  margin-top: 10px;
   font-weight: bold;
 }
 
@@ -103,8 +102,9 @@ button:hover {
 
 p {
   font-size: 14px;
-  color: #666;
-  margin-bottom: 20px;
+  color: #1c3d3c;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 /* Enlaces en la parte inferior */
@@ -127,3 +127,8 @@ p {
   color: #000000;
 }
 
+.recaptcha-estilo {
+  transform: scale(0.7); /* Cambiar el tamaño */
+  transform-origin: 0 0; /* Asegurar que el CAPTCHA quede alineado */
+  margin-bottom: 6px; /* Margen inferior */
+}
