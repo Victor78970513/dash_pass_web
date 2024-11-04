@@ -1,0 +1,105 @@
+.navbar {
+    background-color: #408C8A;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #e0f7fa;
+    border-radius: 4px;
+  }
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .system-name {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .system-title {
+    color: #e0f7fa;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .system-subtitle {
+    color: #e0f7fa;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  
+  .nav-items {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    color: #e0f7fa;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-button:hover {
+    background-color: #00796b;
+  }
+  
+  .logout-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #004d40;
+    border: none;
+    color: #e0f7fa;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .logout-button:hover {
+    background-color: #0b1a19;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-items {
+      display: none; /* You'll need to implement a mobile menu */
+    }
+    
+    .navbar-container {
+      padding: 0 0.5rem;
+    }
+    
+    .system-title {
+      font-size: 0.75rem;
+    }
+    
+    .system-subtitle {
+      font-size: 1rem;
+    }
+  }
