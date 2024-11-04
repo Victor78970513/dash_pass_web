@@ -1,43 +1,55 @@
 import React, { useState } from 'react'
 import Logo from '/img/logo.svg'
 import ReCAPTCHA from "react-google-recaptcha"
-
-
 import appFirebase from '../credenciales'
 import {getAuth, signInWithEmailAndPassword} from 'firebase/auth'
+import './styles/Login.css';
+import { useNavigate } from 'react-router-dom'
 const auth = getAuth(appFirebase)
-
-const onChange = () => {
-    // console.log("Captcha value:");
-}
 
 const Login = () => {
 
-    const [registrando, setRegistrando] = useState(false)
+    const navigate = useNavigate();
 
+    const [recaptchaValue, setRecaptchaValue] = useState(null);
+    // const [registrando, setRegistrando] = useState(false)
+
+    const onChange = (value) => {
+        setRecaptchaValue(value);
+        console.log('Captcha Value: ', value);
+    }
+    
     const fAutenticacion = async(e) =>{
         e.preventDefault();
         const correo = e.target.correo.value;
         const contrasena = e.target.contrasena.value;
-        const recaptchaResponse = grecaptcha.getResponse();
+        // const recaptchaResponse = grecaptcha.getResponse();
 
-        if (recaptchaResponse.length === 0) {
+        if (!recaptchaValue) {
             alert("Por favor, completa el CAPTCHA");
             return;
         }
         console.log(correo);   
         console.log(contrasena); 
-        console.log("reCAPTCHA:", recaptchaResponse);
+        // console.log("reCAPTCHA:", recaptchaResponse);
           
-        
-        await signInWithEmailAndPassword(auth, correo, contrasena)
+        try {
+            await signInWithEmailAndPassword(auth, correo, contrasena);
+            navigate('/registrar-usuarios');
+            console.log("Inicio de sesión exitoso");
+        } catch (error) {
+            console.error("Error al iniciar sesión:", error.message);
+            alert("Error al iniciar sesión. Verifica tus credenciales.");
+        }
+
+        // await signInWithEmailAndPassword(auth, correo, contrasena)
         
     }
   return (
     <div>
         <div className="registro-contenedor">
             <div className="registro-caja">
-                <div className="logo">
+                <div className="login-logo">
                     <img src={Logo} alt="Logo"/>
                 </div>
                 <p className="descripcion-sistema">Sistema administrativo de gestión de peajes.</p>
