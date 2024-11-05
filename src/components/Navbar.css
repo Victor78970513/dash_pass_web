@@ -91,3 +91,22 @@
     background-color: #f7fafc;
     color: #319795; /* Versión más oscura del teal */
   }
+  .logout-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+  logo {
+    margin-right: 20px; /* Ajusta el margen según sea necesario */
+  }
+  
+  .logo img {
+    width: 100px; /* Ajusta el tamaño de tu logo aquí */
+    height: auto;
+  }

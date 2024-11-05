@@ -3,7 +3,8 @@ import appFirebase from './credenciales';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import Login from './components/Login';
 import Home from './components/Home';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ReportePasadas from './ReportePasadas';
 
 function App() {
   const [usuario, setUsuario] = useState(null);
@@ -18,14 +19,17 @@ function App() {
       }
     });
 
-    // Limpieza de la suscripción al desmontar el componente
     return () => unsubscribe();
   }, [auth]);
 
   return (
-    <div>
-      {usuario ? <Home correoUsuario={usuario.email} /> : <Login />}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={usuario ? <Home correoUsuario={usuario.email} /> : <Login />} />
+        <Route path="/home" element={<Home correoUsuario={usuario ? usuario.email : ''} />} />
+        <Route path="/report-pasadas" element={<ReportePasadas />} />
+      </Routes>
+    </Router>
   );
 }
 
