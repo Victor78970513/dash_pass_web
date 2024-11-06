@@ -9,7 +9,7 @@ import RegistrarUsuario from './Pages/RegistrarUsuario';
 import InformesReportes from './Pages/InformesReportes';
 import FlujoVehicular from './Pages/FlujoVehicular';
 import GestionUsuarios from './Pages/GestionUsuarios';
-
+import ReportePasadas from './Pages/ReportePasadas';
 import'./App.css'
 
 const auth = getAuth(appFirebase)
@@ -36,9 +36,9 @@ function App() {
         {usuario ? (
           <>
             <Route path="/registrar-usuarios" element={<RegistrarUsuario />} />
-            <Route path="/flujo-vehicular" element={<FlujoVehicular />} />
+            <Route path="/flujo-vehicular" element={<ReportePasadas />} />
             <Route path="/gestion-usuarios" element={<GestionUsuarios />} />
-            <Route path="/informes-reportes" element={<InformesReportes />} />
+            <Route path="/reporte" element={<InformesReportes />} />
           </>
         ) : (
           <Route path="*" element={<Navigate to="/" />} />
