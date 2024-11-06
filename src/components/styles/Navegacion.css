@@ -1,0 +1,57 @@
+/* SubNavigation.css */
+.sub-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #e0f2f1;
+    border-bottom: 1px solid #e0f2f1;
+    margin-bottom: 2rem;
+  }
+  
+  .sub-navigation-title {
+    color: #408C8A;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .sub-navigation-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .sub-navigation-button {
+    background-color: #408C8A;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sub-navigation-button:hover {
+    background-color: #00796b;
+  }
+  
+  @media (max-width: 768px) {
+    .sub-navigation {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  
+    .sub-navigation-actions {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  
+    .sub-navigation-button {
+      flex: 1;
+      min-width: 150px;
+      text-align: center;
+    }
+  }

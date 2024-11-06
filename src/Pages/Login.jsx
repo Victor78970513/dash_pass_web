@@ -3,8 +3,8 @@ import Logo from '/img/logo.svg'
 import ReCAPTCHA from "react-google-recaptcha"
 import appFirebase from '../credenciales'
 import {getAuth, signInWithEmailAndPassword} from 'firebase/auth'
-import './styles/Login.css';
 import { useNavigate } from 'react-router-dom'
+import './styles/Login.css';
 const auth = getAuth(appFirebase)
 
 const Login = () => {

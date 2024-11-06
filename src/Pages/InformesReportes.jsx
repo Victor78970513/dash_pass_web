@@ -1,4 +1,8 @@
 import React, { useState } from 'react'
+import { useLocation } from 'react-router-dom';
+import NavBar from '../components/Navbar';
+import Navegacion from '../components/Navegacion';
+import { navigationConfig } from './navigationConfig';
 import './styles/InformesReportes.css'
 
 const transactionData = [
@@ -21,6 +25,9 @@ const transactionData = [
   export default function InformesReportes() {
     const [selectedTab, setSelectedTab] = useState('transactions')
     const [exportFormat, setExportFormat] = useState('pdf')
+    const location = useLocation();
+    const currentSection = location.pathname.split('/')[1]; // obtiene 'registrar-usuarios'
+    const { title, actions } = navigationConfig[currentSection];
   
     const handleExport = () => {
       console.log(`Exporting in ${exportFormat} format`)
@@ -29,22 +36,8 @@ const transactionData = [
   
     return (
       <div className="dashboard">
-        <header className="header">
-          <div className="logo-container">
-            <div className="logo"></div>
-            <h1>DASH-PASS Sistema administrativo</h1>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#">Registro de Usuarios</a></li>
-              <li><a href="#">Flujo vehicular</a></li>
-              <li><a href="#">Gestion de Usuarios</a></li>
-              <li><a href="#">Informes y Reportes</a></li>
-              <li><button className="logout-btn">Logout</button></li>
-            </ul>
-          </nav>
-        </header>
-  
+        <NavBar />
+        <Navegacion title={title} actions={actions} />  
         <main className="main-content">
           <div className="top-bar">
             <h2>Informes y Reportes</h2>

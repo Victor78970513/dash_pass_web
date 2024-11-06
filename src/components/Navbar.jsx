@@ -3,7 +3,7 @@ import appFirebase from '../credenciales';
 import { getAuth, signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import Logo from '/img/logo.svg';
-import './styles/NavBarr.css';
+import './styles/NavBars.css';
 
 const auth = getAuth(appFirebase);
 
