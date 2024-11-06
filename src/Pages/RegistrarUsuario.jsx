@@ -1,20 +1,19 @@
 import React from 'react';
 import appFirebase from '../credenciales';
 import { getAuth, signOut } from 'firebase/auth';
-import NavBar from '../components/Navbar'; // Asegúrate de que el archivo se llama correctamente
+import NavBar from '../components/Navbar';
+import Navegacion from '../components/Navegacion';
 const auth = getAuth(appFirebase);
 
-const Home = ({ correoUsuario }) => {
+const Home = () => {
   return (
-    <>
+    <div class="cuerpo">
       <NavBar />
-      <div>
-        <div className='bienvenido'>
-          Bienvenido a la página de administración, {correoUsuario}
-        </div>
-        <button onClick={() => signOut(auth)}>logout</button>
+      <Navegacion />
+      <div className='bienvenido'>
+        {/* aqui va tu parte */}
       </div>
-    </>
+    </div>
   );
 };
 
