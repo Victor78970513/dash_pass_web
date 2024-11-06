@@ -1,10 +1,6 @@
 export const navigationConfig = {
     'registrar-usuarios': {
-      title: 'Registro de Usuarios',
-      actions: [
-        { label: 'Nuevo Usuario', path: '/registrar-usuarios/nuevo' },
-        { label: 'Importar Usuarios', path: '/registrar-usuarios/importar' }
-      ]
+      title: 'Lisado de Usuarios',
     },
     'flujo-vehicular': {
       title: 'Monitoreo Vehicular',
