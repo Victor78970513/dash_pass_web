@@ -36,12 +36,11 @@ const NavBar = () => {
 
         {/* Navigation Items */}
         <div className="nav-items">
-          <button className="nav-button">Registro de Usuarios</button>
-          <button className="nav-button">Flujo vehicular</button>
-          <button className="nav-button">Gestión de Usuarios</button>
-          <button className="nav-button">Informes y Reportes</button>
+          <button className="nav-button" onClick={() => navigate('/registrar-usuarios')}>Registro de Usuarios</button>
+          <button className="nav-button" onClick={() => navigate('/flujo-vehicular')}>Monitoreo vehicular</button>
+          <button className="nav-button" onClick={() => navigate('/GestionUsuarios')}>Gestión de Peajes</button>
+          <button className="nav-button" onClick={() => navigate('/reporte')}>Informes y Reportes</button>
         </div>
-
         {/* Logout Button */}
         <button className="logout-button" onClick={handleLogout}>
           <span>Logout</span>
