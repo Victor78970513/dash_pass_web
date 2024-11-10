@@ -4,13 +4,13 @@ import appFirebase from './credenciales';
 
 import {getAuth, onAuthStateChanged}from 'firebase/auth';
 
-import Login from './Pages/Login';
+import Login from './Pages/auth/Login';
 import RegistrarUsuario from './Pages/RegistrarUsuario';
 import InformesReportes from './Pages/InformesReportes';
-import FlujoVehicular from './Pages/FlujoVehicular';
-import GestionUsuarios from './Pages/GestionUsuarios';
-import ReportePasadas from './Pages/ReportePasadas';
+import MonitoreoVehicular from './Pages/MonitoreoVehicular';
+import GestionPeajes from './Pages/GestionPeajes';
 import'./App.css'
+import { AuthProvider } from './Pages/auth/AuthContext';
 
 const auth = getAuth(appFirebase)
 
@@ -31,13 +31,14 @@ function App() {
   
   
   return (
+    <AuthProvider>
     <Router>
       <Routes>
         {usuario ? (
           <>
             <Route path="/registrar-usuarios" element={<RegistrarUsuario />} />
-            <Route path="/flujo-vehicular" element={<ReportePasadas />} />
-            <Route path="/gestion-usuarios" element={<GestionUsuarios />} />
+            <Route path="/monitoreo-vehicular" element={<MonitoreoVehicular />} />
+            <Route path="/gestion-peajes" element={<GestionPeajes />} />
             <Route path="/reporte" element={<InformesReportes />} />
           </>
         ) : (
@@ -46,6 +47,7 @@ function App() {
         <Route path="/" element={<Login />} />
       </Routes>
     </Router>
+    </AuthProvider>
     
   )
 }

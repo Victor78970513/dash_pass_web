@@ -1,94 +1,232 @@
+.wide-modal .modal-dialog {
+  max-width: 100vw; /* Ajusta el ancho del modal, por ejemplo, 80% del ancho de la ventana */
+}
+
+.wide-modal .modal-content {
+  padding: 20px; /* Ajuste opcional para el padding interno */
+}
+
 /* Contenedor principal */
+.modal-body-content {
+  display: flex;
+  gap: 20px;
+  height: 60vh; /* Ajusta el alto según lo necesites */
+}
+
+.map-container {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.map-container{
+  width: 200px;
+  height: 100%;
+  color: red;
+}
+
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+h2 {
+  text-align: left;
+  color: #3abbb1;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* Agregar una línea decorativa al título */
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #3abbb1;
+}
+
+/* Botón de agregar peaje */
+button.btn-success {
+  background-color: #3abbb1;
+  border-color: #3abbb1;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+button.btn-success:hover {
+  background-color: #32a399;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Contenedor de tarjetas de peajes */
+.peajes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Tarjetas individuales */
+.peaje-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.peaje-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto de sombra y transición en el hover de la tarjeta */
+.peaje-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(58, 187, 177, 0.1), rgba(58, 187, 177, 0.2));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.peaje-card:hover::after {
+  opacity: 1;
+}
+
+/* Nombre del peaje en la tarjeta */
+.peaje-card h3 {
+  color: #3abbb1;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Texto adicional en la tarjeta */
+.peaje-card p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Acciones dentro de la tarjeta */
+.peaje-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Botón de editar */
+button.btn-info {
+  color: #3abbb1;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+button.btn-info:hover {
+  color: #32a399;
+  text-decoration: underline;
+}
+
+/* Botón de eliminar */
+button.btn-danger {
+  background-color: transparent;
+  color: #d9534f;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+button.btn-danger:hover {
+  color: #c9302c;
+  text-decoration: underline;
+}
+
+/* Detalles del peaje */
+.peaje-detail-container {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.peaje-detail-container h3 {
+  color: #3abbb1;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.peaje-detail-container p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.peaje-detail-container p strong {
+  color: #3abbb1;
+}
+
+/* Animación de entrada para los peajes */
+.peaje-card {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
   }
-  
-  /* Título principal */
-  h2 {
-    text-align: left;
-    color: #3abbb1;
-    font-weight: bold;
-    margin-bottom: 20px;
+  100% {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  /* Botón de agregar peaje */
-  button.btn-success {
-    background-color: #3abbb1;
-    border-color: #3abbb1;
-    padding: 10px 20px;
-    font-size: 16px;
-    float: right;
-    margin-bottom: 20px;
-  }
-  
-  button.btn-success:hover {
-    background-color: #32a399;
-  }
-  
-  /* Contenedor de tarjetas de peajes */
-  .peajes-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  /* Tarjetas individuales */
-  .peaje-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .peaje-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Nombre del peaje en la tarjeta */
-  .peaje-card h3 {
-    color: #3abbb1;
-    margin-bottom: 20px;
-  }
-  
-  /* Acciones dentro de la tarjeta */
-  .peaje-actions {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .peaje-actions button {
-    font-size: 14px;
-  }
-  
-  /* Botón de editar */
-  button.btn-info {
-    color: #3abbb1;
-    background-color: transparent;
-    border: none;
-  }
-  
-  button.btn-info:hover {
-    color: #32a399;
-    text-decoration: underline;
-  }
-  
-  /* Botón de eliminar */
-  button.btn-danger {
-    background-color: transparent;
-    color: #d9534f;
-    border: none;
-  }
-  
-  button.btn-danger:hover {
-    color: #c9302c;
-    text-decoration: underline;
-  }
-  
+}
+

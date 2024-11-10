@@ -1,107 +1,126 @@
+/* Fondo general con gradiente suave */
+
+/* Contenedor principal */
+.registro-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Caja del formulario */
+.registro-caja {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  color: #2f3e46;
+}
+
+/* Logo */
 .login-logo img {
-    width: 150px;
-    height: 150px;
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
+/* Descripción del sistema */
+.descripcion-sistema {
+  font-size: 14px;
+  color: #5a6b72;
+  margin-bottom: 10px;
+}
+
+/* Título */
+.registro-caja h3 {
+  color: #2f3e46;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Formulario */
+.registro-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registro-formulario label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  text-align: left;
+}
+
+.registro-formulario input {
+  padding: 12px;
+  font-size: 16px;
+  color: #2f3e46;
+  background-color: #f7f9fa;
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.registro-formulario input:focus {
+  border-color: #607d8b;
+  outline: none;
+}
+
+/* Botón principal */
+.registro-formulario button {
+  background-color: #1976d2;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.registro-formulario button:hover {
+  background-color: #1565c0;
+}
+
+/* ReCAPTCHA */
+.recaptcha-estilo {
+  margin: 15px 0;
+  transform: scale(0.85);
+  transform-origin: 0 0;
+}
+
+/* Enlaces del pie */
+.enlaces-pie {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #1976d2;
+}
+
+.enlaces-pie a {
+  color: #1976d2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.enlaces-pie a:hover {
+  color: #0d47a1;
+}
+
+/* Ajustes de medios para responsive */
 @media (min-width: 768px) {
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .registro-contenedor {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      width: 100%;
-    }
-}
-  
-  /* Contenedor del formulario */
   .registro-caja {
-    background-color: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 450px;
-    width: 100%;
-    margin: 0 20px;
+    padding: 60px;
   }
-  
-  /* Título del login */
-  .registro-caja h3 {
-    color: #408C8A;
-  }
-  
-  /* Formulario de login */
-  .registro-formulario {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .registro-formulario label {
-    font-size: 16px;
-    margin-bottom: 8px;
-    text-align: left;
-    color: #004d40;
-  }
-  
-  .registro-formulario input {
-    margin-bottom: 15px;
-    border: 3px solid #00796b;
-    background-color: #e0f7fa;
-    color: #0b1a19;
-  }
-  
-  .registro-formulario input:focus {
-    border: 3px solid #004d40;
-    outline: none;
-  }
-  
+  .registro-formulario input,
   .registro-formulario button {
-    background-color: #0b1a19;
-    border: 3px solid #00796b;
-    color: #00796b;
+    font-size: 18px;
   }
-  
-  .registro-formulario button:hover {
-    background-color: #00796b;
-    color: #000000;
-    border: 3px solid #0b1a19;
-  }
-  
-  /* Enlaces del pie */
-  .enlaces-pie {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  
-  .enlaces-pie a {
-    color: #004d40;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .enlaces-pie a:hover {
-    color: #004d40;
-  }
-  
-  /* Extras */
-  .bienvenido {
-    color: #000000;
-  }
-  
-  .descripcion-sistema {
-    color: #1c3d3c;
-  }
-  
-  /* ReCAPTCHA */
-  .recaptcha-estilo {
-    transform: scale(0.7);
-    transform-origin: 0 0;
-    margin-bottom: 6px;
 }
-

@@ -35,8 +35,8 @@ const NavBar = () => {
         {/* Elementos de navegación */}
         <div className="nav-items">
           <button className="nav-button" onClick={() => navigate('/registrar-usuarios')}>Registro de Usuarios</button>
-          <button className="nav-button" onClick={() => navigate('/flujo-vehicular')}>Monitoreo vehicular</button>
-          <button className="nav-button" onClick={() => navigate('/gestion-usuarios')}>Gestión de Usuarios</button>
+          <button className="nav-button" onClick={() => navigate('/monitoreo-vehicular')}>Monitoreo vehicular</button>
+          <button className="nav-button" onClick={() => navigate('/gestion-peajes')}>Gestión de Peajes</button>
           <button className="nav-button" onClick={() => navigate('/reporte')}>Informes y Reportes</button>
         </div>
 

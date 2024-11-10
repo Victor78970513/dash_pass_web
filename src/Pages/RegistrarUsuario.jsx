@@ -1,15 +1,10 @@
 import {React, useState} from 'react';
 import { useLocation } from 'react-router-dom';
-// import appFirebase from '../credenciales';
-// import { getAuth, signOut } from 'firebase/auth';
 import NavBar from '../components/Navbar';
 import Navegacion from '../components/Navegacion';
 import { navigationConfig } from './navigationConfig';
 import AgregarUsuario from './AgregarUsuario';
-import './styles/Home.css';
 import './styles/AgregarUsuario.css';
-// import Navegacion from '../components/Navegacion';
-// const auth = getAuth(appFirebase);
 
 
 const Home = () => {

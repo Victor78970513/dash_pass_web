@@ -1,16 +1,46 @@
-/* Contenedor principal */
-.p-4 {
-    padding: 2rem;
-  }
-  
-  h1 {
+.filtro-container {
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
+  margin-bottom: 20px;
+  padding-right: 40px;
+}
+
+.filtro {
+  display: flex;
+  align-items: center;
+}
+
+.input-filtro {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-filtrar {
+  padding: 8px 16px;
+  background-color: #38b2ac;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+h1 {
     font-size: 2rem;
     font-weight: bold;
-    color: #38b2ac; /* Color teal */
+    color: #38b2ac;
     margin-bottom: 1.5rem;
-  }
-  
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  } 
+
   /* Estilos generales para la tabla */
+  .tabla-monitoreo{
+    padding: 20px 20px 20px 20px;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
@@ -19,6 +49,7 @@
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
   }
   
   /* Encabezados de la tabla */
@@ -85,4 +116,5 @@
   .rounded {
     border-radius: 0.375rem;
   }
+
   

@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
 import Logo from '/img/logo.svg'
 import ReCAPTCHA from "react-google-recaptcha"
-import appFirebase from '../credenciales'
+import appFirebase from '../../credenciales'
 import {getAuth, signInWithEmailAndPassword} from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
-import './styles/Login.css';
+import '../styles/Login.css';
+import { getFirestore, collection, query, where, getDocs } from 'firebase/firestore';
+import { useAuth } from './AuthContext';
 const auth = getAuth(appFirebase)
+const db = getFirestore(appFirebase);
 
 const Login = () => {
 
     const navigate = useNavigate();
-
+    const { setRole, setUser } = useAuth(); 
     const [recaptchaValue, setRecaptchaValue] = useState(null);
-    // const [registrando, setRegistrando] = useState(false)
 
     const onChange = (value) => {
         setRecaptchaValue(value);
@@ -23,26 +25,34 @@ const Login = () => {
         e.preventDefault();
         const correo = e.target.correo.value;
         const contrasena = e.target.contrasena.value;
-        // const recaptchaResponse = grecaptcha.getResponse();
 
         if (!recaptchaValue) {
             alert("Por favor, completa el CAPTCHA");
             return;
         }
         console.log(correo);   
-        console.log(contrasena); 
-        // console.log("reCAPTCHA:", recaptchaResponse);
-          
+        console.log(contrasena);  
         try {
-            await signInWithEmailAndPassword(auth, correo, contrasena);
-            navigate('/registrar-usuarios');
-            console.log("Inicio de sesión exitoso");
+            const userCredential = await signInWithEmailAndPassword(auth, correo, contrasena);
+            const uid = userCredential.user.uid;
+            console.log(uid);
+            const usuariosRef = collection(db, 'administradores');
+            const q = query(usuariosRef, where('uid', '==',uid));
+            const querySnapshot = await getDocs(q);
+
+            if(!querySnapshot.empty){
+                const userDoc = querySnapshot.docs[0].data();
+                const rolId = userDoc.rol_id;
+                setUser(uid)
+                setRole(rolId)
+                navigate('/registrar-usuarios');
+                console.log("Inicio de sesión exitoso");
+                
+            }
         } catch (error) {
             console.error("Error al iniciar sesión:", error.message);
             alert("Error al iniciar sesión. Verifica tus credenciales.");
         }
-
-        // await signInWithEmailAndPassword(auth, correo, contrasena)
         
     }
   return (
