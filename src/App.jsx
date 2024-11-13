@@ -20,9 +20,7 @@ const App = () => {
     <div className="parent-div ">
       <div className="desktop-9-container pos-abs">
         <div className="hero-background-rectangle pos-abs"></div>
-
-        <div className="hero-background-image pos-abs"></div>
-        {/* Group 41 */}
+        <div className="menu-background-rectangle pos-abs"></div>
         <section className="logo-container pos-abs">
           <div className="logo-icon-container pos-abs">
             <div className="logo-icon-part-1 pos-abs">
@@ -46,6 +44,9 @@ const App = () => {
             <div className="nodeBg-21411 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat "></div>
           </div>
         </section>
+        {/* <div className="logo-container pos-abs">
+          
+        </div> */}
 
         <div className="header-background pos-abs"></div>
         {/* Group 111 */}
@@ -88,13 +89,12 @@ const App = () => {
         </div>
 
         <div className="hero-title-line-1 pos-abs">
-          <span className="hero-title-line-1-1">{`Sistema de pagos Automatizados Para puntos de peajes `}</span>
+          <span className="hero-title-line-1-1">{`Pago de peajes Automatizados`}</span>
         </div>
 
         <div className="hero-description pos-abs">
           <span className="hero-description-1">{`"Optimiza tu experiencia en las autopistas con nuestro sistema de peajes 
-automatizados. Gracias a la tecnología RFID, reduce los tiempos 
-de espera y disfruta de un viaje fluido sin detenerte en los puntos de cobro."`}</span>
+automatizados, y disfruta de un viaje fluido sin detenerte en los puntos de peaje."`}</span>
         </div>
         {/* Frame 6281 */}
         <section className="cta-button-container pos-abs">
