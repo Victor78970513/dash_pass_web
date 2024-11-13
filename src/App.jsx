@@ -174,7 +174,7 @@ en los Peajes`}</span>
         {/* Mask Group1 */}
         <section className="feature-image-container-1 pos-abs">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F12-nov-2024%2Fjhadyriv031731391992794%2Fimage-102-688.png?alt=media&token=0"
+            src="../src/images/imagen11.png"
             className="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div  object-fit"
             alt="102688-ALT"
           />{" "}
@@ -182,7 +182,7 @@ en los Peajes`}</span>
         {/* Mask Group2 */}
         <section className="feature-image-container-2 pos-abs">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F12-nov-2024%2Fjhadyriv031731391992794%2Fimage-102-691.png?alt=media&token=0"
+            src="../src/images/imagen12.png"
             className="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div  object-fit"
             alt="102691-ALT"
           />{" "}
@@ -190,7 +190,7 @@ en los Peajes`}</span>
         {/* Mask Group3 */}
         <section className="feature-image-container-3 pos-abs">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F12-nov-2024%2Fjhadyriv031731391992794%2Fimage-102-694.png?alt=media&token=0"
+            src="../src/images/imagen13.png"
             className="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div  object-fit"
             alt="102694-ALT"
           />{" "}
@@ -314,7 +314,7 @@ Positivo`}</span>
         {/* Mask Group4 */}
         <section className="team-image-container pos-abs">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F12-nov-2024%2Fjhadyriv031731391992794%2Fimage-102-731.png?alt=media&token=0"
+            src="../src/images/imagen14.png"
             className="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div  object-fit"
             alt="102731-ALT"
           />{" "}
@@ -355,7 +355,7 @@ Proyecto`}</span>
         {/* Mask Group5 */}
         <section className="project-history-image-container pos-abs">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F12-nov-2024%2Fjhadyriv031731391992794%2Fimage-102-742.png?alt=media&token=0"
+            src="../src/images/imagen15.png"
             className="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div  object-fit"
             alt="102742-ALT"
           />{" "}
@@ -373,7 +373,7 @@ Proyecto`}</span>
         {/* Mask Group7 */}
         <section className="news-image-container-1 pos-abs">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F12-nov-2024%2Fjhadyriv031731391992794%2Fimage-102-748.png?alt=media&token=0"
+            src="../src/images/imagen16.png"
             className="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div  object-fit"
             alt="102748-ALT"
           />{" "}
@@ -381,7 +381,7 @@ Proyecto`}</span>
         {/* Mask Group6 */}
         <section className="news-image-container-2 pos-abs">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F12-nov-2024%2Fjhadyriv031731391992794%2Fimage-102-745.png?alt=media&token=0"
+            src="../src/images/imagen17.png"
             className="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div  object-fit"
             alt="102745-ALT"
           />{" "}
@@ -389,7 +389,7 @@ Proyecto`}</span>
         {/* Mask Group8 */}
         <section className="news-image-container-3 pos-abs">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/figma-plugin-a7287.appspot.com/o/user-images%2F12-nov-2024%2Fjhadyriv031731391992794%2Fimage-102-751.png?alt=media&token=0"
+            src="../src/images/imagen18.png"
             className="pos-abs pos-init fill-parent bg-contain bg-no-repeat image-div  object-fit"
             alt="102751-ALT"
           />{" "}
