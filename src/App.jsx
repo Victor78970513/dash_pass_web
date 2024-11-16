@@ -39,44 +39,17 @@ const App = () => {
               <div className="nodeBg-21416 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat "></div>
             </div>
           </div>
-
           <div className="logo-text pos-abs">
             <div className="nodeBg-21411 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat "></div>
           </div>
         </section>
-        {/* <div className="logo-container pos-abs">
-          
-        </div> */}
-
-        <div className="header-background pos-abs"></div>
         {/* Group 111 */}
         <section className="header-nav-container pos-abs">
-          <div className="header-product-link pos-abs">
-            <span className="header-product-link-1">{`Producto`}</span>
+          <div className="cta-button-inicio-container">
+            <span className="button-text">Administracion</span>
           </div>
-
-          <div className="header-services-link pos-abs">
-            <span className="header-services-link-1">{`Services`}</span>
-          </div>
-
-          <div className="header-find-team-link pos-abs">
-            <span className="header-find-team-link-1">{`Find a Team`}</span>
-          </div>
-
-          <div className="header-about-us-link pos-abs">
-            <span className="header-about-us-link-1">{`About Us`}</span>
-          </div>
-
-          <div className="header-articles-link pos-abs">
-            <span className="header-articles-link-1">{`Articles`}</span>
-          </div>
-
-          <div className="header-portfolio-link pos-abs">
-            <span className="header-portfolio-link-1">{`Portofolio`}</span>
-          </div>
-
-          <div className="header-contact-us-link pos-abs">
-            <span className="header-contact-us-link-1">{`Contact us`}</span>
+          <div className="cta-button-app-container">
+            <span className="button-text">Descargar App</span>
           </div>
         </section>
 
@@ -93,14 +66,13 @@ const App = () => {
         </div>
 
         <div className="hero-description pos-abs">
-          <span className="hero-description-1">{`"Optimiza tu experiencia en las autopistas con nuestro sistema de peajes 
-automatizados, y disfruta de un viaje fluido sin detenerte en los puntos de peaje."`}</span>
+          <span className="hero-description-1">{`Disfruta de un viaje fluido sin detenerte en los puntos de peaje.`}</span>
         </div>
         {/* Frame 6281 */}
-        <section className="cta-button-container pos-abs">
-          <div className="cta-button-text pos-abs">
-            <span className="cta-button-text-1">{`Mas Información`}</span>
-          </div>
+        <section className="cta-info-container pos-abs">
+          <a href="#features-section" className="cta-button-info-container pos-abs">
+            <span className="button-text">Mas Información</span>
+          </a>
         </section>
         {/* Group 121 */}
         <section className="stats-container pos-abs">
@@ -165,7 +137,7 @@ automatizados, y disfruta de un viaje fluido sin detenerte en los puntos de peaj
           />{" "}
         </div>
 
-        <div className="features-section-background pos-abs"></div>
+        <div id="features-section" className="features-section-background pos-abs"></div>
 
         <div className="features-section-title pos-abs">
           <span className="features-section-title-1">{`Transformación Digital 
@@ -329,13 +301,13 @@ Positivo`}</span>
             <span className="team-description-1">{`"Un equipo dedicado de ingenieros y especialistas en tecnología que trabajan para ofrecer una experiencia de viaje más rápida y eficiente. Estamos aquí para ayudarte a modernizar tu operación de peaje con soluciones innovadoras."`}</span>
           </div>
 
-          <div className="team-cta-button-container pos-abs">
+          {/* <div className="team-cta-button-container pos-abs">
             <div className="team-cta-button-text pos-abs">
               <span className="team-cta-button-text-1">{`See all team`}</span>
             </div>
-          </div>
+          </div> */}
 
-          <div className="how-it-works-link pos-abs">
+          {/* <div className="how-it-works-link pos-abs">
             <span className="how-it-works-link-1">{`How it works`}</span>
           </div>
 
@@ -345,7 +317,7 @@ Positivo`}</span>
                 <div className="nodeBg-102730 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat "></div>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
 
         <div className="project-history-title pos-abs">
@@ -449,8 +421,8 @@ Proyecto`}</span>
         <div className="cta-section-background-1 pos-abs"></div>
 
         <div className="cta-title-1 pos-abs">
-          <span className="cta-title-1-1">{`¿ Eres conductor ?, ¿Quieres 
-empezar a utilizar aplicación?`}</span>
+          <span className="cta-title-1-1">{`¿ Eres conductor ?
+Empeza a utilizar la aplicación`}</span>
         </div>
 
         <div className="cta-image-1 pos-abs">
@@ -462,15 +434,16 @@ empezar a utilizar aplicación?`}</span>
         </div>
 
         <div className="cta-description-1 pos-abs">
-          <span className="cta-description-1-1">{`"Descarga nuestra aplicación y disfruta de un paso rápido
- y sin filas en los peajes. Ahorra tiempo y paga de forma
- segura sin detenerte."`}</span>
+          <span className="cta-description-1-1">{`Descarga nuestra aplicación y disfruta 
+de un viaje sin filas en los peajes.
+Ahorra tiempo y paga de forma
+segura sin detenerte.`}</span>
         </div>
         {/* Frame 6291 */}
-        <section className="cta-button-container-1 pos-abs">
-          <div className="cta-button-text-1 pos-abs">
-            <span className="cta-button-text-1-1">{`Descarga Aqui`}</span>
-          </div>
+        <section className="cta-button-descarga-container pos-abs">
+          <a href="https://play.google.com/store/apps" className="cta-button-descarga pos-abs"> {/*link de appstore*/}  
+            <span className="button-text">Descarga Aqui</span>
+          </a>
         </section>
         {/* bi:arrow-down1 */}
         <section className="scroll-down-icon-1 pos-abs"></section>
@@ -490,18 +463,19 @@ empezar a utilizar aplicación?`}</span>
         </div>
 
         <div className="cta-description-2 pos-abs">
-          <span className="cta-description-2-1">{`Inicia sesión y vive una experiencia mejorada. Accede a herramientas avanzadas para gestionar de forma más ágil y eficiente todas tus operaciones. ¡Transforma tu manera de trabajar!`}</span>
+          <span className="cta-description-2-1">{`Inicia sesión y accede a herramientas avanzadas para gestionar todas tus operaciones. ¡Transforma tu manera de trabajar!`}</span>
         </div>
 
-        <div className="footer-background-rectangle pos-abs"></div>
         {/* Frame 6301 */}
-        <section className="cta-button-container-2 pos-abs">
-          <div className="cta-button-text-2 pos-abs">
-            <span className="cta-button-text-2-1">{`inicia sesión`}</span>
-          </div>
+        <section className="cta-button-admin-container pos-abs">
+          <a href="" className="cta-button-admin pos-abs">        {/*link del admin loginPage*/}  
+            <span className="button-text">inicia sesión</span>
+          </a>
         </section>
         {/* bi:arrow-down2 */}
         <section className="scroll-down-icon-2 pos-abs"></section>
+
+        <div className="footer-background-rectangle pos-abs"></div>
 
         <div className="footer-container pos-abs"></div>
 
