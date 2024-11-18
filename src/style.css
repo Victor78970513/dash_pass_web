@@ -2107,3 +2107,108 @@ body {
   text-align: center;
   line-height: 0px;
 }
+
+.footer-container {
+  background-color: #0e1836;
+  color: #ffffff;
+  padding: 20px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+  font-family: Arial, sans-serif; 
+  margin-top: 440%;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.wave-icon {
+  font-size: 36px;
+}
+
+.wave-line {
+  width: 36px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-left: 5px;
+}
+
+.logo-text {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.footer-button {
+  background-color: #ffffff;
+  color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-links li:hover {
+  color: #007bff;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.footer-icons .icon-github:before {
+  content: '🌐';
+}
+
+.footer-icons .icon-instagram:before {
+  content: '📷';
+}
+
+.footer-icons .icon-linkedin:before {
+  content: '🔗';
+}
+
+.footer-icons .icon-privacy:before {
+  content: '🔒';
+}
+
+.footer-copyright {
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+}

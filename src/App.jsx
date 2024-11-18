@@ -472,7 +472,9 @@ segura sin detenerte.`}</span>
         <div className="cta-description-2 pos-abs">
           <span className="cta-description-2-1">{`Inicia sesión y accede a herramientas avanzadas para gestionar todas tus operaciones. ¡Transforma tu manera de trabajar!`}</span>
         </div>
+        {/* <div className="footer-background-rectangle pos-abs"></div> */}
 
+        {/* <div className="footer-background-rectangle pos-abs"></div> */}
         {/* Frame 6301 */}
         <section className="cta-button-admin-container pos-abs">
           <a href="https://dash-pass-f5146.web.app/" className="cta-button-admin pos-abs">        {/*link del admin loginPage*/}  
@@ -482,95 +484,33 @@ segura sin detenerte.`}</span>
         {/* bi:arrow-down2 */}
         <section className="scroll-down-icon-2 pos-abs"></section>
 
-        <div className="footer-background-rectangle pos-abs"></div>
-
-        <div className="footer-container pos-abs"></div>
-
-        <div className="footer-logo-text pos-abs">
-          <span className="footer-logo-text-1">{`General Project`}</span>
+        <footer className="footer-container">
+      <div className="footer-logo">
+        <div className="logo-icon">
+          <span className="wave-icon">DASH PASS</span>
         </div>
-        {/* Item1 */}
-        <section className="footer-company-links-container pos-abs">
-          <div className="footer-company-links-background pos-abs"></div>
+      </div>
 
-          <div className="footer-company-links-title pos-abs">
-            <span className="footer-company-links-title-1">{`Company`}</span>
-          </div>
+      <ul className="footer-links">
+        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Productos</li>
+        <li>Sobre Nosotros</li>
+      </ul>
 
-          <div className="footer-about-link pos-abs">
-            <span className="footer-about-link-1">{`About`}</span>
-          </div>
+      <div className="footer-icons">
+        <i className="icon-github"></i>
+        <i className="icon-instagram"></i>
+        <i className="icon-linkedin"></i>
+        <i className="icon-privacy"></i>
+      </div>
 
-          <div className="footer-terms-link pos-abs">
-            <span className="footer-terms-link-1">{`How it Works`}</span>
-          </div>
-
-          <div className="footer-privacy-policy-link pos-abs">
-            <span className="footer-privacy-policy-link-1">{`Term`}</span>
-          </div>
-
-          <div className="footer-careers-link pos-abs">
-            <span className="footer-careers-link-1">{`Privacy Policy`}</span>
-          </div>
-        </section>
-        {/* Item2 */}
-        <section className="footer-more-links-container pos-abs">
-          <div className="footer-more-links-background pos-abs"></div>
-
-          <div className="footer-more-links-title pos-abs">
-            <span className="footer-more-links-title-1">{`More`}</span>
-          </div>
-
-          <div className="footer-documentation-link pos-abs">
-            <span className="footer-documentation-link-1">{`Documentation`}</span>
-          </div>
-
-          <div className="footer-license-link pos-abs">
-            <span className="footer-license-link-1">{`License`}</span>
-          </div>
-        </section>
-
-        <div className="footer-description pos-abs">
-          <span className="footer-description-1">{`is a general contractor company based in Jakarta. More than 25 years of experience in building and carving out Indonesia's development.`}</span>
-        </div>
-
-        <div className="footer-social-icon-1-shadow pos-abs"></div>
-
-        <div className="footer-social-icon-1-background pos-abs"></div>
-        {/* Layer1 */}
-        <section className="footer-social-icon-2-container pos-abs">
-          <div className="footer-social-icon-2-shadow pos-abs"></div>
-
-          <div className="footer-social-icon-2-background pos-abs"></div>
-        </section>
-        {/* Layer2 */}
-        <section className="footer-social-icon-3-container pos-abs">
-          <div className="footer-social-icon-3-shadow pos-abs"></div>
-
-          <div className="footer-social-icon-3-background pos-abs"></div>
-        </section>
-        {/* Layer3 */}
-        <section className="footer-social-icon-4-container pos-abs">
-          <div className="footer-social-icon-4-shadow pos-abs"></div>
-
-          <div className="footer-social-icon-4-background pos-abs"></div>
-        </section>
-
-        <div className="footer-social-icon-1 pos-abs">
-          <span className="footer-social-icon-1-1">{`google`}</span>
-        </div>
-
-        <div className="footer-social-icon-2 pos-abs">
-          <span className="footer-social-icon-2-1">{`twitter`}</span>
-        </div>
-
-        <div className="footer-social-icon-3 pos-abs">
-          <span className="footer-social-icon-3-1">{`instagram`}</span>
-        </div>
-
-        <div className="footer-social-icon-4 pos-abs">
-          <span className="footer-social-icon-4-1">{`linkedin`}</span>
-        </div>
+      <div className="footer-copyright">
+        © Wave Technologies LLC <br />
+        • Todos Los Derechos Reservados <br />
+        • Política De Privacidad
+      </div>
+    </footer>
       </div>
     </div>
   );
