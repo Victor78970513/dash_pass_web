@@ -6,7 +6,7 @@ import image4 from "./images/image4.png";
 import image5 from "./images/image5.png";
 import image6 from "./images/image6.png";
 import image7 from "./images/image7.png";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import ReactDOM from "react-dom/client";
 import "./style.css";
 
@@ -15,6 +15,13 @@ const App = () => {
   useEffect(() => {
     runAnimations();
   }, []);
+
+  const adminbtn = useRef(null);
+  const downloadbtn = useRef(null);
+
+  const scrollToComponent = (targetRef) => {
+    targetRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className="parent-div ">
@@ -45,10 +52,10 @@ const App = () => {
         </section>
         {/* Group 111 */}
         <section className="header-nav-container pos-abs">
-          <div className="cta-button-inicio-container">
+          <div onClick={() => scrollToComponent(adminbtn)} className="cta-button-inicio-container">
             <span className="button-text">Administracion</span>
           </div>
-          <div className="cta-button-app-container">
+          <div onClick={() => scrollToComponent(downloadbtn)} className="cta-button-app-container">
             <span className="button-text">Descargar App</span>
           </div>
         </section>
@@ -418,7 +425,7 @@ Proyecto`}</span>
           <span className="news-description-3-1">{`Nuestro sistema ha demostrado ser efectivo en reducir los tiempos de espera en un 70%, facilitando un flujo vehicular más rápido y seguro.`}</span>
         </div>
 
-        <div className="cta-section-background-1 pos-abs"></div>
+        <div ref={downloadbtn} className="cta-section-background-1 pos-abs"></div>
 
         <div className="cta-title-1 pos-abs">
           <span className="cta-title-1-1">{`¿ Eres conductor ?
@@ -448,7 +455,7 @@ segura sin detenerte.`}</span>
         {/* bi:arrow-down1 */}
         <section className="scroll-down-icon-1 pos-abs"></section>
 
-        <div className="cta-section-background-2 pos-abs"></div>
+        <div ref={adminbtn} className="cta-section-background-2 pos-abs"></div>
 
         <div className="cta-image-2 pos-abs">
           <img
@@ -468,7 +475,7 @@ segura sin detenerte.`}</span>
 
         {/* Frame 6301 */}
         <section className="cta-button-admin-container pos-abs">
-          <a href="" className="cta-button-admin pos-abs">        {/*link del admin loginPage*/}  
+          <a href="https://dash-pass-f5146.web.app/" className="cta-button-admin pos-abs">        {/*link del admin loginPage*/}  
             <span className="button-text">inicia sesión</span>
           </a>
         </section>
